@@ -203,7 +203,6 @@ public class calculateTest {
         long result = instance.getRes();
         assertNotEquals(expResult, result);
 
-
         expResult = 6;
         instance.setA(10);
         instance.setB(2);
