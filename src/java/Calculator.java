@@ -15,9 +15,7 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 public class Calculator {
 
-    public Calculator(long a, long b) {
-        this.a = a;
-        this.b = b;
+    public Calculator() {
     }
 
     public long a;
