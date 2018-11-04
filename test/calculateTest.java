@@ -31,7 +31,7 @@ public class calculateTest {
     public void tearDown() {
     }
 
-    //testes verdadeiros
+    //testes com resultado esperado
     @Test
     public void testSoma() {
         System.out.println("Teste da soma");
