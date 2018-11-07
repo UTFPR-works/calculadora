@@ -208,4 +208,56 @@ public class calculateTest {
         result = instance.getRes();
         assertNotEquals(expResult, result);
     }
+
+    // novos testes
+    @Test
+    public void testSomaMultiplica() {
+        System.out.println("Teste de soma e multiplicação");
+        int expResult = 20;
+
+        Calculator instance = new Calculator();
+        instance.setA(3);
+        instance.setB(2);
+        instance.sum();
+
+        instance.setA(instance.getRes());
+        instance.setB(4);
+        instance.mult();
+        long result = instance.getRes();
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testSomaSubtrai() {
+        System.out.println("Teste de soma e subtração");
+        int expResult = 10;
+
+        Calculator instance = new Calculator();
+        instance.setA(10);
+        instance.setB(10);
+        instance.sum();
+
+        instance.setA(instance.getRes());
+        instance.setB(10);
+        instance.sub();
+        long result = instance.getRes();
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testSomaDivide() {
+        System.out.println("Teste de soma e divisão");
+        int expResult = 2;
+
+        Calculator instance = new Calculator();
+        instance.setA(5);
+        instance.setB(5);
+        instance.sum();
+
+        instance.setA(instance.getRes());
+        instance.setB(5);
+        instance.divs();
+        long result = instance.getRes();
+        assertEquals(expResult, result);
+    }
 }
